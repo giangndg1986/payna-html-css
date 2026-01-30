@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --responsive-rate: (100vw - 575px) / (1410 - 575);
+            --scale-ratio: 1.333;
+        }
+
+        html {
+            font-size: 62.5%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            height: 100%;
+        }
+
+        .main-heading {
+            --font-size-min: calc(var(--font-size) - var(--heading-delta));
+            --font-size-max: calc(var(--font-size));
+            --font-size-min-inrem: calc((var(--font-size-min)/10) * 1rem);
+            --font-size-max-inrem: calc((var(--font-size-max)/10) * 1rem);
+            font-size: clamp(var(--font-size-min-inrem), calc(var(--font-size-min-inrem) + (var(--font-size-max) - var(--font-size-min)) * var(--responsive-rate)), var(--font-size-max-inrem));
+        }
+
+        .main-body {
+            --body-delta: calc(pow(1.333, calc(1/4) * -1));
+            --font-size-min: calc(var(--font-size) * var(--body-delta));
+            --font-size-max: calc(var(--font-size));
+            --font-size-min-inrem: calc((var(--font-size-min)/10) * 1rem);
+            --font-size-max-inrem: calc((var(--font-size-max)/10) * 1rem);
+            --base-size: clamp(var(--font-size-min-inrem), calc(var(--font-size-min-inrem) + (var(--font-size-max) - var(--font-size-min)) * var(--responsive-rate)), var(--font-size-max-inrem));
+            font-size: calc(var(--base-size) * calc(pow(1.333, calc(var(--n, 0)/4))));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-heading" style="--font-size:90; --heading-delta: 34;">This is hero heading</div>
+    <div class="main-heading" style="--font-size:72; --heading-delta: 24;">This is ultra heading</div>
+    <div class="main-heading" style="--font-size:58; --heading-delta: 18;">This is heading 1</div>
+    <div class="main-heading" style="--font-size:46; --heading-delta: 12;">This is heading 3</div>
+    <div class="main-heading" style="--font-size:34; --heading-delta: 4;">This is heading 4</div>
+    <div class="main-heading" style="--font-size:26; --heading-delta: 2;">This is heading 5</div>
+    <div class="main-heading" style="--font-size:22; --heading-delta: 2;">This is heading 5</div>
+    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">This is heading 6</div>
+    <br />
+    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">Medium Body</div>
+    <div class="main-body" style="--font-size:16; --n: 0;">It is a long established fact that a reader will be
+        distracted by
+        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
+        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
+        like).
+    </div>
+    <br />
+    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">XL Body</div>
+    <div class="main-body" style="--font-size:16; --n: 1;">It is a long established fact that a reader will be
+        distracted by
+        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
+        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
+        like).
+    </div>
+    <br />
+    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">2XL Body</div>
+    <div class="main-body" style="--font-size:16; --n: 2;">It is a long established fact that a reader will be
+        distracted by
+        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
+        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
+        like).
+    </div>
+    <br />
+    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">3XL Body</div>
+    <div class="main-body" style="--font-size:16; --n: 3;">It is a long established fact that a reader will be
+        distracted by
+        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
+        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
+        like).
+    </div>
+    <br />
+    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">4XL Body</div>
+    <div class="main-body" style="--font-size:16; --n: 4;">It is a long established fact that a reader will be
+        distracted by
+        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
+        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
+        like).
+    </div>
+</body>
+
+</html>
