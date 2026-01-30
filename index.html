@@ -1,108 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>JavaScript Server</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./static/main.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="main-navbar mt-9">
+        <div class="container">
+          <div class="row">
+            <div class="col col--2 d-flex flex-row align-items-center">
+              <a
+                class="main-navbar_brand d-flex flex-row align-items-center"
+                aria-label="Payna"
+                href="#"
+              >
+                <img
+                  class="main-logo"
+                  alt="Payna"
+                  title="Payna"
+                  src="./static/images/logo/main-logo.png"
+                />
+              </a>
+              <span class="fs-28 fw-600 ml-3">Payna</span>
+            </div>
+            <div
+              class="col col--7 d-flex justify-content-center align-items-center hide-on-mb"
+            >
+              <div class="main-navbar_nav">
+                <ul class="main-nav">
+                  <li class="main-nav_item">
+                    <a
+                      class="fw-400 main-nav_item_link color-main text-decoration-none"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="main-nav_item">
+                    <a
+                      class="fw-400 main-nav_item_link color-main text-decoration-none"
+                      href="#"
+                      >Features</a
+                    >
+                  </li>
+                  <li class="main-nav_item">
+                    <a
+                      class="fw-400 main-nav_item_link color-main text-decoration-none"
+                      href="#"
+                      >Showcase</a
+                    >
+                  </li>
+                  <li class="main-nav_item">
+                    <a
+                      class="fw-400 main-nav_item_link color-main text-decoration-none"
+                      href="#"
+                      >Pricing</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col col--3 d-flex align-items-center justify-content-end hide-on-mb"
+            >
+              <a class="btn btn-lg btn-secondary text-decoration-none" href="#">
+                Sign In
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="promo mt-25">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col col--5">
+              <h1 class="mb-5 color-back text-center-on-tb">
+                Manage Payroll Like an Expert
+              </h1>
+              <p class="mb-7 text-center-on-tb">
+                Payna is helping you to setting up the payroll without required
+                any finance skills or knowledge before
+              </p>
+              <div class="d-flex flex-row justify-content-content-center-on-tb">
+                <a
+                  class="btn btn-lg btn-primary fw-600 text-decoration-none"
+                  href="#"
+                >
+                  Get Started
+                </a>
+              </div>
+            </div>
+            <div class="col col--7 hide-on-mb">
+              <img
+                class="w-100pc"
+                alt="Analytics and Bulk Export"
+                title="Analytics and Bulk Export"
+                src="./static/images/promo.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trusted-by-global-company mt-18">
+        <div class="container">
+          <div class="row">
+            <div class="col col--3 mb-8-on-mb">
+              <p class="fw-600 color-back text-center-on-mb">
+                Trusted by <br class="hide-on-mb" />
+                Global Companies
+              </p>
+            </div>
+            <div
+              class="col col--9 d-flex justify-content-flex-end align-items-center flex-wrap-on-mb justify-content-flex-start-on-mb"
+            >
+              <img
+                class="brand-logo mr-6 ml-6 mb-7-on-mb"
+                alt="Apple"
+                title="Apple"
+                src="./static/images/logo/apple.png"
+              />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        :root {
-            --responsive-rate: (100vw - 575px) / (1410 - 575);
-            --scale-ratio: 1.333;
-        }
+              <img
+                class="brand-logo mr-6 ml-6 mb-7-on-mb"
+                alt="Adobe"
+                title="Adobe"
+                src="./static/images/logo/adobe.png"
+              />
+              <img
+                class="brand-logo mr-6 ml-6 mb-7-on-mb"
+                alt="Slack"
+                title="Slack"
+                src="./static/images/logo/slack.png"
+              />
+              <img
+                class="brand-logo mr-6 ml-6 mb-7-on-mb"
+                alt="Spotify"
+                title="Spotify"
+                src="./static/images/logo/spotify.png"
+              />
+              <img
+                class="brand-logo mr-6 ml-6 mb-7-on-mb"
+                alt="Google"
+                title="Google"
+                src="./static/images/logo/google.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="for-your-bussiness mt-30">
+        <div class="container">
+          <div class="row px-6">
+            <div
+              class="col col--12 d-flex flex-col justify-content-center align-items-center"
+            >
+              <p class="sub-heading text-center color-orange mb-2 fw-bold">
+                WORK BETTER
+              </p>
+              <h2 class="color-back mb-5">For Your Business</h2>
+              <p class="lead text-center">
+                We did research what your company needs and here we are
+                providing all of them just for you
+              </p>
+            </div>
+          </div>
+          <div class="row mt-18 px-6">
+            <div class="col col--4 d-flex md-col--6 flex-col mb-15 px-3-on-mb">
+              <div class="block-with-icon d-flex flex-row">
+                <div class="block-with-icon_icon">
+                  <i
+                    class="fs-24 pa-18 bg-1 color-white bd-radius-pc fa-solid fa-suitcase"
+                  ></i>
+                </div>
 
-        html {
-            font-size: 62.5%;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            height: 100%;
-        }
+                <div class="ml-6 d-flex flex-col block-with-icon_body">
+                  <h3 class="block-with-icon_body_head mb-3">Share Insights</h3>
+                  <div class="block-with-icon_body_content">
+                    Working together with your team to make decisions
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col--4 d-flex flex-col md-col--6 mb-15 px-3-on-mb">
+              <div class="block-with-icon d-flex flex-row">
+                <div class="block-with-icon_icon">
+                  <i
+                    class="fs-24 pa-18 bg-4 color-white bd-radius-pc fa-solid fa-bars-progress"
+                  ></i>
+                </div>
 
-        .main-heading {
-            --font-size-min: calc(var(--font-size) - var(--heading-delta));
-            --font-size-max: calc(var(--font-size));
-            --font-size-min-inrem: calc((var(--font-size-min)/10) * 1rem);
-            --font-size-max-inrem: calc((var(--font-size-max)/10) * 1rem);
-            font-size: clamp(var(--font-size-min-inrem), calc(var(--font-size-min-inrem) + (var(--font-size-max) - var(--font-size-min)) * var(--responsive-rate)), var(--font-size-max-inrem));
-        }
+                <div class="ml-6 d-flex flex-col block-with-icon_body">
+                  <h3 class="block-with-icon_body_head mb-3">Kanban Mode</h3>
+                  <div class="block-with-icon_body_content">
+                    Organize the report that easy to be understand
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col--4 d-flex flex-col md-col--6 mb-15 px-3-on-mb">
+              <div class="block-with-icon d-flex flex-row">
+                <div class="block-with-icon_icon">
+                  <i
+                    class="fs-24 pa-18 bg-2 color-white bd-radius-pc fa-solid fa-paper-plane"
+                  ></i>
+                </div>
 
-        .main-body {
-            --body-delta: calc(pow(1.333, calc(1/4) * -1));
-            --font-size-min: calc(var(--font-size) * var(--body-delta));
-            --font-size-max: calc(var(--font-size));
-            --font-size-min-inrem: calc((var(--font-size-min)/10) * 1rem);
-            --font-size-max-inrem: calc((var(--font-size-max)/10) * 1rem);
-            --base-size: clamp(var(--font-size-min-inrem), calc(var(--font-size-min-inrem) + (var(--font-size-max) - var(--font-size-min)) * var(--responsive-rate)), var(--font-size-max-inrem));
-            font-size: calc(var(--base-size) * calc(pow(1.333, calc(var(--n, 0)/4))));
-        }
-    </style>
-</head>
+                <div class="ml-6 d-flex flex-col block-with-icon_body">
+                  <h3 class="block-with-icon_body_head mb-3">Track Leads</h3>
+                  <div class="block-with-icon_body_content">
+                    See where your money goes and comes in business
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col--4 d-flex flex-col md-col--6 mb-15 px-3-on-mb">
+              <div class="block-with-icon d-flex flex-row">
+                <div class="block-with-icon_icon">
+                  <i
+                    class="fs-24 pa-18 bg-5 color-white bd-radius-pc fa-solid fa-gift"
+                  ></i>
+                </div>
 
-<body>
-    <div class="main-heading" style="--font-size:90; --heading-delta: 34;">This is hero heading</div>
-    <div class="main-heading" style="--font-size:72; --heading-delta: 24;">This is ultra heading</div>
-    <div class="main-heading" style="--font-size:58; --heading-delta: 18;">This is heading 1</div>
-    <div class="main-heading" style="--font-size:46; --heading-delta: 12;">This is heading 3</div>
-    <div class="main-heading" style="--font-size:34; --heading-delta: 4;">This is heading 4</div>
-    <div class="main-heading" style="--font-size:26; --heading-delta: 2;">This is heading 5</div>
-    <div class="main-heading" style="--font-size:22; --heading-delta: 2;">This is heading 5</div>
-    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">This is heading 6</div>
-    <br />
-    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">Medium Body</div>
-    <div class="main-body" style="--font-size:16; --n: 0;">It is a long established fact that a reader will be
-        distracted by
-        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
-        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
-        like).
-    </div>
-    <br />
-    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">XL Body</div>
-    <div class="main-body" style="--font-size:16; --n: 1;">It is a long established fact that a reader will be
-        distracted by
-        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
-        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
-        like).
-    </div>
-    <br />
-    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">2XL Body</div>
-    <div class="main-body" style="--font-size:16; --n: 2;">It is a long established fact that a reader will be
-        distracted by
-        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
-        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
-        like).
-    </div>
-    <br />
-    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">3XL Body</div>
-    <div class="main-body" style="--font-size:16; --n: 3;">It is a long established fact that a reader will be
-        distracted by
-        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
-        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
-        like).
-    </div>
-    <br />
-    <div class="main-heading" style="--font-size:18; --heading-delta: 2;">4XL Body</div>
-    <div class="main-body" style="--font-size:16; --n: 4;">It is a long established fact that a reader will be
-        distracted by
-        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-        more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look
-        like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-        default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the
-        like).
-    </div>
-</body>
+                <div class="ml-6 d-flex flex-col block-with-icon_body">
+                  <h3 class="block-with-icon_body_head mb-3">Reward System</h3>
+                  <div class="block-with-icon_body_content">
+                    Motivate your team working harder and receive a gift
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col--4 d-flex flex-col md-col--6 mb-15 px-3-on-mb">
+              <div class="block-with-icon d-flex flex-row">
+                <div class="block-with-icon_icon">
+                  <i
+                    class="fs-24 pa-18 bg-3 color-white bd-radius-pc fa-solid fa-at"
+                  ></i>
+                </div>
 
+                <div class="ml-6 d-flex flex-col block-with-icon_body">
+                  <h3 class="block-with-icon_body_head mb-3">Offline Mode</h3>
+                  <div class="block-with-icon_body_content">
+                    Use the feature while off from internet? sure can
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col--4 d-flex md-col--6 flex-col px-3-on-mb">
+              <div class="block-with-icon d-flex flex-row">
+                <div class="block-with-icon_icon">
+                  <i
+                    class="fs-24 pa-18 bg-6 color-white bd-radius-pc fa-solid fa-globe"
+                  ></i>
+                </div>
+
+                <div class="ml-6 d-flex flex-col block-with-icon_body">
+                  <h3 class="block-with-icon_body_head mb-3">189 Country</h3>
+                  <div class="block-with-icon_body_content">
+                    Working together worldwide people from anywhere
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="boost-productivity mt-30 mb-30">
+        <div class="container">
+          <div class="row gx-6 align-items-center">
+            <div class="col col--7">
+              <img
+                class="w-100pc"
+                alt="Boost Productivity"
+                title="Boost Productivity"
+                src="./static/images/boost-productivity.png"
+              />
+            </div>
+            <div class="col col--5 d-flex flex-col">
+              <div class="block-with-form d-flex flex-row">
+                <div
+                  class="d-flex align-item-center-on-mb flex-col block-with-form_body mt-6-on-mb w-100pc-on-mobile"
+                >
+                  <p
+                    class="block-with-form_body_sub_head sub-heading color-orange mb-2 fw-bold"
+                  >
+                    SAVE MORE TIME
+                  </p>
+                  <h2 class="block-with-form_body_head color-back mb-5">
+                    And Boost Productivity
+                  </h2>
+                  <div
+                    class="block-with-form_content mb-9 text-center-on-mb lead"
+                  >
+                    Your employees can bring any success into your business, so
+                    we need to take care of them
+                  </div>
+                  <form class="block-with-form_form-inline w-100pc-on-mobile">
+                    <div
+                      class="pr align-items-center justify-content-end d-flex flex-row flex-col-on-mb"
+                    >
+                      <input
+                        type="email"
+                        class="pa pi-on-mobile w-100pc bg-7 pa-16 border-none bd-radius-50px mb-6-on-mb"
+                        placeholder="Email Address"
+                      />
+                      <button
+                        type="submit"
+                        class="btn btn-lg btn-primary zindez-1 fw-600 border-none"
+                      >
+                        Get Started
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
